@@ -2,14 +2,10 @@ version: "3.8"
 services:
     nodeserver:
         image: jakubblockczech/test
-        build:
-            context: ./app
         ports:
             - "8000:8000"
     nginx:
         image: nginx
         restart: always
-        build:
-            context: ./nginx
         ports:
             - "80:80"
