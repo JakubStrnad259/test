@@ -7,7 +7,7 @@ services:
         ports:
             - "8000:8000"
     nginx:
-        image: jakubblockczech/test
+        image: jakubblockczech/nginx
         restart: always
         build:
             context: ./nginx
